@@ -1,0 +1,209 @@
+.about-me {
+	width: 100%;
+	min-height: calc(100vh - 25rem);
+	padding: 2rem;
+	position: relative;
+	overflow: hidden;
+	box-shadow: $box-shadows-4;
+	background: $white;
+	border-radius: 2px;
+	.about-me-header-box {
+		width: 30rem;
+		height: auto;
+		background: #243a51;
+		padding: .5rem 2rem;
+		border-radius: 10rem;
+		position: absolute;
+		top: 5rem;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow: $box-shadows-4;
+		color: #4abde8;
+		.about-me-header {
+			font-size: 2.5rem;
+			font-family: 'Vollkorn', serif;
+			font-weight: bolder;
+			text-shadow: $box-shadows-2;
+		}
+	}
+	.about-me-content-box {
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		margin-top: 15rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		.mystory-box {
+			width: 40rem;
+			height: 40rem;
+			background: $white;
+			overflow: hidden;
+			.mystory-box-header {
+				text-transform: uppercase;
+				font-size: 2.5rem;
+				color: #4abde8;
+				margin-bottom: 2rem;
+				text-shadow: $box-shadows-2;
+			}
+			.mystory-box-desc {
+				font-size: 1.5rem;
+				color: #243a51;
+				font-weight: 400;
+				margin-bottom: 4rem;
+				line-height: 3rem;
+			}
+			.mystory-box-link {
+				background: #4abde8;
+				padding: 1rem 2.5rem;
+				border-radius: 2px;
+				color: #ffffff;
+				text-transform: uppercase;
+				font-size: 1.5rem;
+				font-weight: 600;
+				box-shadow: $box-shadows-2;
+			}
+		}
+		.mystory-image-box {
+			width: 40rem;
+			height: 40rem;
+			background: rgb(196, 194, 194);
+			box-shadow: $box-shadows-2;
+			border-radius: 2px;
+			border: 8px solid $white;
+			overflow: hidden;
+			.mystory-image {
+				width: 100% !important;
+				height: 100% !important;
+			}
+		}
+		.personal-box {
+			width: 40rem;
+			height: 40rem;
+			overflow: hidden;
+			.personal-box-header {
+				text-transform: uppercase;
+				font-size: 2.5rem;
+				color: #4abde8;
+				margin-bottom: 2rem;
+				text-shadow: $box-shadows-2;
+			}
+			.personal-menu {
+				width: 100%;
+				height: auto;
+				list-style: none;
+				.personal-list {
+					font-size: 1.5rem;
+					color: #243a51;
+					border-bottom: 1px solid rgb(241, 241, 241);
+					width: 100%;
+					height: 6rem;
+					display: flex;
+					align-items: center;
+					&:last-child() {
+						border-bottom: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1366px) {
+	.about-me {
+		.about-me-content-box {
+			.mystory-box {
+				margin-bottom: 5rem !important;
+			}
+			.mystory-image-box {
+				margin-bottom: 5rem !important;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.about-me {
+		.about-me-content-box {
+			.mystory-box {
+				margin-bottom: 5rem !important;
+			}
+			.mystory-image-box {
+				margin-bottom: 5rem !important;
+				order: -2;
+			}
+			.personal-box {
+				order: -1;
+				.personal-box-header {
+					text-transform: uppercase;
+					font-size: 2.5rem;
+					color: #4abde8;
+					margin-bottom: 2rem;
+					text-shadow: $box-shadows-2;
+				}
+				.personal-menu {
+					width: 100%;
+					height: auto;
+					list-style: none;
+					.personal-list {
+						font-size: 1.5rem;
+						color: #243a51;
+						border-bottom: 1px solid rgb(241, 241, 241);
+						width: 100%;
+						height: 6rem;
+						display: flex;
+						align-items: center;
+						&:last-child() {
+							border-bottom: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 421px) {
+	.about-me {
+		.about-me-content-box {
+			.mystory-box {
+				height: 60rem !important;
+				margin-bottom: 5rem !important;
+			}
+			.mystory-image-box {
+				margin-bottom: 5rem !important;
+				order: -2;
+			}
+			.personal-box {
+				order: -1;
+				.personal-box-header {
+					text-transform: uppercase;
+					font-size: 2.5rem;
+					color: #4abde8;
+					margin-bottom: 2rem;
+					text-shadow: $box-shadows-2;
+				}
+				.personal-menu {
+					width: 100%;
+					height: auto;
+					list-style: none;
+					.personal-list {
+						font-size: 1.5rem;
+						color: #243a51;
+						border-bottom: 1px solid rgb(241, 241, 241);
+						width: 100%;
+						height: 6rem;
+						display: flex;
+						align-items: center;
+						&:last-child() {
+							border-bottom: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

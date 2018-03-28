@@ -1,0 +1,42 @@
+.wanttowork {
+	width: 100%;
+	height: auto;
+	box-shadow: $box-shadows-1;
+	border-radius: 2px;
+	background: #243a51;
+	position: relative;
+	overflow: hidden;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	.wanttowork-box {
+		width: 70%;
+		height: 100%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		padding-top: 5rem;
+		flex-direction: column;
+		.wanttowork-box-header {
+			font-family: 'Vollkorn', serif;
+			font-size: 3rem;
+			color: #4abde8;
+			margin-bottom: 2rem;
+		}
+		.wanttowork-box-desc {
+			color: $white;
+			font-size: 1.5rem;
+			margin-bottom: 5rem;
+		}
+		.wanttowork-box-link {
+			background: transparent;
+			border: 2px solid #4abde8;
+			border-radius: 2px;
+			padding: 1rem 2.5rem;
+			font-size: 1.5rem;
+			text-transform: uppercase;
+			color: #4abde8;
+			box-shadow: $box-shadows-2;
+			margin-bottom: 5rem;
+		}
+	}
+}

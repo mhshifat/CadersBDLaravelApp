@@ -1,0 +1,59 @@
+// Fonts Family
+
+$Raleway: 'Raleway', sans-serif;
+
+$Vollkorn: 'Vollkorn', serif;
+
+$OpenSans: 'Open Sans', sans-serif;
+
+// Colors
+
+$white: #ffffff;
+
+$nav-color: rgb(36, 58, 81);
+
+$main-back: rgb(230, 230, 230);
+
+$light-blue: rgb(74, 189, 232);
+
+$light-blue-op: rgba(rgb(74, 189, 232), .5);
+
+$input-back: rgb(44, 62, 82);
+
+
+// Box Shadows
+
+$box-shadows-1: 0 .5rem 1rem rgba(0, 0, 0, .1);
+
+$box-shadows-2: 0 .5rem 1rem rgba(0, 0, 0, .2);
+
+$box-shadows-3: 0 .5rem 1rem rgba(0, 0, 0, .3);
+
+$box-shadows-4: 0 .5rem 1rem rgba(0, 0, 0, .4);
+
+$box-shadows-6: 0 .5rem 1rem rgba(0, 0, 0, .6);
+
+$box-shadows-8: 0 .5rem 1rem rgba(0, 0, 0, .8);
+
+$boxes-shadows: 0 5px 5px #ccc;
+
+// Mixin
+
+@mixin positionCenter() {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin positionLeft() {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@mixin positionRight() {
+	position: absolute;
+	top: 0;
+	right: 0;
+}

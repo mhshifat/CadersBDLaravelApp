@@ -1,0 +1,365 @@
+.newsletter {
+	width: 100%;
+	height: 50rem;
+	box-shadow: $box-shadows-1;
+	border-radius: 2px;
+	background: url("/images/Mountains-1412683.svg");
+	position: relative;
+	background-position: right;
+	background-size: cover;
+	overflow: hidden;
+	.back {
+		width: 100%;
+		height: 100%;
+		background: #243a51;
+		opacity: .8;
+	}
+	.newsletter-box {
+		width: 50%;
+		height: 80%;
+		background: #243a51;
+		margin: 0 auto;
+		border-radius: 5px;
+		box-shadow: $box-shadows-4;
+		@include positionCenter;
+		.cross-icon-box {
+			position: absolute;
+			right: -1.5rem;
+			top: -1.5rem;
+			width: 5rem;
+			height: 5rem;
+			background: #212529;
+			color: $white;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 2rem;
+			cursor: pointer;
+		}
+		.newsletter-content {
+			width: 100%;
+			height: 70%;
+			display: flex;
+			overflow: hidden;
+			.newsletter-content-box {
+				width: 20rem;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				overflow: hidden;
+				i {
+					font-size: 10rem;
+					color: #4abde8;
+				}
+			}
+			.newsletter-content-box-news {
+				padding: 0 5rem;
+				width: calc(100% - 20rem);
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				.newsletter-content-box-news-header {
+					font-family: 'Vollkorn', serif;
+					font-size: 2.5rem;
+					font-weight: 700;
+					color: #4abde8;
+					margin-bottom: 2rem;
+				}
+				.newsletter-content-box-news-decs {
+					font-size: 1.5rem;
+					color: #4abde8;
+				}
+			}
+		}
+		.newsletter-content-input {
+			width: 100%;
+			height: 30%;
+			background: #2c3e52;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.newsletter-content-input-field {
+				width: 80%;
+				height: 50px;
+				form {
+					display: flex;
+					justify-content: space-between;
+					width: 100%;
+					height: 50px;
+				}
+				.newsletter-content-input-field-email {
+					width: 70%;
+					height: 49px;
+					border-radius: 5px;
+					border: none;
+					background: #243a51;
+					padding: 0 2rem;
+					color: #4abde8;
+					font-size: 2rem;
+					outline: none;
+					border-bottom: 1px solid #243a51;
+					transition: all .4s;
+
+					&::-webkit-input-placeholder {
+						color: #4abde8;
+					}
+					&:focus {
+						outline: none;
+						border: none;
+						border-bottom: 1px solid #4abde8;
+					}
+					&:active {
+						outline: none;
+						border: none;
+					}
+				}
+				.newsletter-content-button {
+					width: 25%;
+					height: 100%;
+					background: #4abde8;
+					border: none;
+					border-radius: 5px;
+					font-size: 2rem;
+					color: #243a51;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1438px) {
+	.newsletter {
+		.newsletter-box {
+			width: 70%;
+		}
+	}
+}
+
+@media only screen and (max-width: 1215px) {
+	.newsletter {
+		.newsletter-box {
+			width: 80%;
+		}
+	}
+}
+
+@media only screen and (max-width: 993px) {
+	.newsletter {
+		.newsletter-box {
+			width: 90%;
+		}
+	}
+}
+
+@media only screen and (max-width: 734px) {
+	.newsletter {
+		.newsletter-box {
+			.newsletter-content {
+				.newsletter-content-box {
+					width: 10rem;
+					i {
+						font-size: 6rem;
+					}
+				}
+				.newsletter-content-box-news {
+					padding: 0;
+					width: calc(100% - 10rem);
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					.newsletter-content-box-news-header {
+						font-family: 'Vollkorn', serif;
+						font-size: 2.5rem;
+						font-weight: 700;
+						color: #4abde8;
+						margin-bottom: 2rem;
+					}
+					.newsletter-content-box-news-decs {
+						font-size: 1.5rem;
+						color: #4abde8;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1215px) {
+	.newsletter {
+		width: 100%;
+		height: 50rem;
+		box-shadow: $box-shadows-1;
+		border-radius: 2px;
+		background: url("/images/Mountains-1412683.svg");
+		position: relative;
+		background-position: right;
+		background-size: cover;
+		overflow: hidden;
+		.back {
+			width: 100%;
+			height: 100%;
+			background: #243a51;
+			opacity: .8;
+		}
+		.newsletter-box {
+			width: 80%;
+			height: 80%;
+			background: #243a51;
+			margin: 0 auto;
+			border-radius: 5px;
+			box-shadow: $box-shadows-4;
+			@include positionCenter;
+			.cross-icon-box {
+				position: absolute;
+				right: -1.5rem;
+				top: -1.5rem;
+				width: 5rem;
+				height: 5rem;
+				background: #212529;
+				color: $white;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 2rem;
+				cursor: pointer;
+			}
+			.newsletter-content {
+				width: 100%;
+				height: 70%;
+				display: flex;
+				overflow: hidden;
+				.newsletter-content-box {
+					width: 20rem;
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					overflow: hidden;
+					i {
+						font-size: 10rem;
+						color: #4abde8;
+					}
+				}
+				.newsletter-content-box-news {
+					padding: 0 5rem;
+					width: calc(100% - 20rem);
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					.newsletter-content-box-news-header {
+						font-family: 'Vollkorn', serif;
+						font-size: 2.5rem;
+						font-weight: 700;
+						color: #4abde8;
+						margin-bottom: 2rem;
+					}
+					.newsletter-content-box-news-decs {
+						font-size: 1.5rem;
+						color: #4abde8;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 582px) {
+	.newsletter {
+		.newsletter-box {
+			width: 90%;
+			.cross-icon-box {
+				position: absolute;
+				right: -1.5rem;
+				top: -1.5rem;
+				width: 5rem;
+				height: 5rem;
+				background: #212529;
+				color: $white;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 2rem;
+				cursor: pointer;
+			}
+			.newsletter-content {
+				width: 100%;
+				height: 70%;
+				display: flex;
+				overflow: hidden;
+				.newsletter-content-box {
+					width: 20rem;
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					overflow: hidden;
+					i {
+						font-size: 10rem;
+						color: #4abde8;
+					}
+				}
+				.newsletter-content-box-news {
+					padding: 0 5rem;
+					width: calc(100% - 20rem);
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					.newsletter-content-box-news-header {
+						font-family: 'Vollkorn', serif;
+						font-size: 2.5rem;
+						font-weight: 700;
+						color: #4abde8;
+						margin-bottom: 2rem;
+					}
+					.newsletter-content-box-news-decs {
+						font-size: 1.5rem;
+						color: #4abde8;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 506px) {
+	.newsletter {
+		.newsletter-box {
+			.newsletter-content {
+				.newsletter-content-box {
+					width: 10rem;
+					i {
+						font-size: 6rem;
+					}
+				}
+				.newsletter-content-box-news {
+					padding: 0;
+					width: calc(100% - 10rem);
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					.newsletter-content-box-news-header {
+						font-family: 'Vollkorn', serif;
+						font-size: 2.5rem;
+						font-weight: 700;
+						color: #4abde8;
+						margin-bottom: 2rem;
+					}
+					.newsletter-content-box-news-decs {
+						font-size: 1.5rem;
+						color: #4abde8;
+					}
+				}
+			}
+		}
+	}
+}

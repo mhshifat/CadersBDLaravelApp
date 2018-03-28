@@ -1,0 +1,138 @@
+#footer {
+	width: 100%;
+	height: 15rem;
+	background: $nav-color;
+	box-shadow: $box-shadows-4;
+	overflow: hidden;
+
+	.social {
+		width: 100%;
+		height: 10rem;
+		border-bottom: 1px solid rgba(#101010, .5);
+
+		.footer-social {
+			height: auto;
+			margin: 0 auto;
+			background: #243a51;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			width: 100%;
+			overflow: hidden;
+			.social-menu {
+				list-style: none;
+				display: flex;
+				width: auto;
+				height: auto;
+				flex-wrap: wrap;
+				.social-list {
+					width: 50px;
+					height: 50px;
+					background: #243a51;
+					border-radius: 50%;
+					box-shadow: $box-shadows-4;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					overflow: hidden;
+					cursor: pointer;
+
+					&:first-child {
+						margin-right: 2rem;
+					}
+					&:nth-child(2) {
+						margin-right: 2rem;
+					}
+					&:nth-child(3) {
+						margin-right: 2rem;
+					}
+					&:nth-child(5) {
+						margin-left: 2rem;
+					}
+					&:nth-child(6) {
+						margin-left: 2rem;
+					}
+					&:last-child {
+						margin-left: 2rem;
+					}
+					.social-link {
+						font-size: 2rem;
+						color: $white;
+
+						&:hover {
+							color: $light-blue;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.copy {
+		width: 100%;
+		height: 5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.copy-text {
+			font-family: $Vollkorn;
+			color: $light-blue;
+			font-size: 1.6rem;
+			text-transform: lowercase;
+		}
+	}
+}
+
+@media only screen and (max-width: 702px) {
+	#footer {
+		.social {
+			.footer-social {
+				height: auto;
+				margin-left: 0;
+				background: #243a51;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding-top: 2rem;
+				padding-bottom: 2rem;
+				width: 100%;
+				overflow: hidden;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 474px) {
+	#footer {
+		.social {
+			.footer-social {
+				.social-menu {
+					margin: 0 auto;
+					.social-list {
+						width: 33px;
+						height: 33px;
+						background: #243a51;
+						border-radius: 50%;
+						box-shadow: $box-shadows-6;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						overflow: hidden;
+						cursor: pointer;
+						margin-bottom: 2rem !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 354px) {
+	#footer {
+		.copy {
+			display: none;
+		}
+	}
+}

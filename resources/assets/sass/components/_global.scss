@@ -1,0 +1,156 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+button {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: $white;
+}
+
+ul {
+	list-style: none;
+}
+
+html {
+	font-size: 62.5%;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: $Raleway;
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: $nav-color;
+	width: 100%;
+	min-height: 100vh;
+	background: $main-back;
+	padding-top: 6rem;
+	position: relative;
+}
+
+#main {
+	width: calc(100% - 24rem);
+	height: auto;
+	margin-left: 24rem;
+
+	.content {
+		padding: 2rem;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.open {
+	height: auto !important;
+	transition: all .4s;
+}
+
+.open_1 {
+	height: 27.5rem !important;
+	transition: all .4s;
+}
+
+.open_2 {
+	width: 24rem !important;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: $nav-color;
+	opacity: .1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: $nav-color;
+	width: 5px;
+	border-radius: 20rem;
+}
+
+#error {
+	position: fixed;
+	right: -500px;
+	bottom: 50px;
+	z-index: 100000;
+	background: #f8d7da;
+	color: #721c24;
+	padding: 1rem 2rem;
+	border-radius: .2rem;
+	font-size: 1.5rem;
+	font-weight: 500;
+	font-family: $Vollkorn;
+	box-shadow: $box-shadows-1;
+	animation: error 5s ease-out;
+}
+
+#success {
+	position: fixed;
+	right: -500px;
+	bottom: 50px;
+	z-index: 100000;
+	background: #d4edda;
+	color: #155724;
+	padding: 1rem 2rem;
+	border-radius: .2rem;
+	font-size: 1.5rem;
+	font-weight: 500;
+	font-family: $Vollkorn;
+	box-shadow: $box-shadows-1;
+	animation: error 5s ease-out;
+}
+
+#notice {
+	position: fixed;
+	right: -500px;
+	bottom: 50px;
+	z-index: 100000;
+	background: #d1ecf1;
+	color: #0c5460;
+	padding: 1rem 2rem;
+	border-radius: .2rem;
+	font-size: 1.5rem;
+	font-weight: 500;
+	font-family: $Vollkorn;
+	box-shadow: $box-shadows-1;
+	animation: error 5s ease-out;
+}
+
+@keyframes error {
+	0% {
+		opacity: 0;
+		right: -500px;
+	}
+
+	20% {
+		opacity: 1;
+		right: 50px;
+	}
+
+	80% {
+		opacity: 1;
+		right: 50px;
+	}
+
+	100% {
+		opacity: 0;
+		right: -500px;
+	}
+
+}
+
+@media only screen and (max-width: 700px) {
+	#main {
+		width: 100% !important;
+		height: auto !important;
+		margin-left: 0rem !important;
+	}
+}

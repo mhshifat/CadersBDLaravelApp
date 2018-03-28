@@ -1,0 +1,189 @@
+#register {
+	width: 100%;
+	height: calc(100vh - 25rem);
+	box-shadow: $boxes-shadows;
+	background: $white;
+	border-radius: 2px;
+	overflow: hidden;
+	.back-box {
+		background: url('/images/Mountains-1412683.svg');
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		position: relative;
+		.back-box-2 {
+			width: 100%;
+			height: 100%;
+			background: $nav-color;
+			opacity: .7;
+		}
+		.register-main-box {
+			width: 100rem;
+			height: 50rem;
+			background: $light-blue;
+			@include positionCenter;
+			display: flex;
+			border-radius: 2px;
+			box-shadow: $box-shadows-4;
+			.register-left-side {
+				width: 50%;
+				height: 120%;
+				background: $nav-color;
+				transform: translateY(-8%);
+				box-shadow: $box-shadows-2;
+				border-radius: 2px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				position: absolute;
+				right: 0;
+				.register-header {
+					color: $light-blue;
+					text-transform: uppercase;
+					font-size: 2rem;
+					border: 2px solid $light-blue;
+					border-radius: 2px;
+					padding: 1.2rem 2rem;
+					box-shadow: $box-shadows-2;
+					margin-bottom: 4rem;
+					text-shadow: $box-shadows-2;
+					.register-icon {
+						margin-right: .5rem;
+					}
+				}
+				.register-form {
+					width: 80%;
+					height: auto;
+					.form-group {
+						width: 100%;
+						height: 40px;
+						border-radius: 2px;
+						display: flex;
+						overflow: hidden;
+						margin-bottom: 4rem;
+						.icon-box {
+							width: 5rem;
+							height: 100%;
+							display: flex;
+							align-items: center; // background: $input-back;
+							.icon {
+								color: $light-blue;
+								font-size: 2.5rem;
+							}
+						}
+						.input-box {
+							width: calc(100% - 5rem);
+							height: 40px;
+							overflow: hidden;
+							.input {
+								border: none;
+								width: 100%;
+								height: 39px;
+								background: $input-back;
+								border-bottom: 1px solid $input-back;
+								padding-left: 2rem;
+								color: $light-blue;
+								border-radius: 2px;
+								transition: all .4s;
+								&::-webkit-input-placeholder {
+									color: $light-blue;
+									font-size: 1.5rem;
+									font-family: $OpenSans;
+								}
+								&:focus {
+									outline: none;
+									border-bottom: 1px solid $light-blue;
+								}
+							}
+						}
+					}
+					.btn {
+						border: none;
+						padding: 1rem 2rem;
+						border-radius: 2px;
+						font-size: 1.5rem;
+						text-transform: uppercase;
+						font-family: $OpenSans;
+						font-weight: bold;
+						color: $white;
+						background: $nav-color;
+						cursor: pointer;
+						box-shadow: $box-shadows-2;
+						margin-top: 2rem;
+						.btn-icon {
+							margin-left: .5rem;
+						}
+					}
+				}
+			}
+			.register-right-side {
+				width: 50%;
+				height: 100%;
+				background: $light-blue;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				text-align: center;
+				.register-right-side-header {
+					font-size: 2rem;
+					font-family: $OpenSans;
+					text-transform: uppercase;
+					color: $nav-color;
+					margin-bottom: 2rem;
+				}
+				.register-right-side-subheader {
+					width: 70%;
+					height: auto;
+					color: #101010;
+					line-height: 3rem;
+					margin-bottom: 2rem;
+				}
+				.register-right-side-link {
+					background: $nav-color;
+					color: $white;
+					padding: 1rem 1.5rem;
+					border-radius: 2px;
+					text-transform: uppercase;
+					margin-top: 1rem;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1286px) {
+	#register {
+		.back-box {
+			.back-box-2 {}
+			.register-main-box {
+				width: 50rem;
+				height: 50rem;
+				.register-left-side {
+					width: 100%;
+					height: 120%;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 483px) {
+	#register {
+		.back-box {
+			.back-box-2 {}
+			.register-main-box {
+				width: 40rem;
+				height: 50rem;
+				.register-left-side {
+					width: 100%;
+					height: 120%;
+				}
+			}
+		}
+	}
+}
+

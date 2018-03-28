@@ -1,0 +1,286 @@
+// Top Navbar Styles
+#topNavbar {
+	width: 100%;
+	height: 6rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: $nav-color;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: $white;
+	box-shadow: $box-shadows-2;
+	z-index: 999;
+	padding: 0 2rem;
+	.hamburger-box {
+		width: 6rem;
+		height: 100%;
+		color: $white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow: $box-shadows-1;
+		cursor: pointer;
+		.hamburger-icon {
+			font-size: 2.5rem;
+		}
+	}
+	.navbarTop {
+		width: auto;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		.comment-icon-box {
+			width: 6rem;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			.comment-icon {
+				font-size: 1.8rem;
+				position: relative;
+				text-shadow: $box-shadows-2;
+				.comment-count-number {
+					width: 1.5rem;
+					height: 1.5rem;
+					background: red;
+					border-radius: .2rem;
+					position: absolute;
+					top: -.8rem;
+					right: -.8rem;
+					padding: .5rem;
+					font-size: 1.2rem;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+		.message-icon-box {
+			width: 6rem;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			.message-icon {
+				font-size: 1.8rem;
+				position: relative;
+				text-shadow: $box-shadows-2;
+				.message-count-number {
+					width: 1.5rem;
+					height: 1.5rem;
+					background: red;
+					border-radius: .2rem;
+					position: absolute;
+					top: -.8rem;
+					right: -1rem;
+					padding: .5rem;
+					font-size: 1.2rem;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+		.top-profile-logo-box {
+			width: auto;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+			margin-left: 2rem;
+			cursor: pointer;
+			.top-pro-username {
+				font-size: 1.5rem;
+				font-weight: 700;
+				text-transform: uppercase;
+				font-family: $Vollkorn;
+				text-shadow: $box-shadows-2;
+				&:hover {
+					opacity: .5;
+				}
+				&:active {
+					color: $light-blue;
+				}
+			}
+			.profile-logo-box {
+				width: 6rem;
+				height: 100%;
+				overflow: hidden;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.middle-profile-logo-box {
+					width: 4rem;
+					height: 4rem;
+					border-radius: 50%;
+					background: $white;
+					border: 2px solid $white;
+					overflow: hidden;
+					transition: all .4s ease-in-out;
+					display: inline-block;
+					box-shadow: $box-shadows-2;
+					&:hover {
+						transform: rotate(360deg);
+					}
+					.profile-logo {
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+	.profile-link-box {
+		width: auto;
+		height: 0;
+		overflow: hidden;
+		background: $nav-color;
+		position: absolute;
+		top: 6rem;
+		right: 3rem;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		font-size: 1.4rem;
+		z-index: 9999;
+		box-shadow: $box-shadows-2;
+		overflow: hidden;
+		transition: all .4s;
+		.profile-link-box-menu {
+			width: auto;
+			height: auto;
+			overflow: hidden;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			.profile-link-box-list {
+				width: 15rem;
+				height: 4rem;
+				display: flex;
+				align-items: center;
+				border-radius: 2px;
+				padding-left: 2rem;
+				background: $nav-color;
+				&:hover {
+					background: $light-blue;
+				}
+				.profile-link-box-link {
+					font-family: $OpenSans;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					align-items: center;
+					.profile-link-box-icon {
+						margin-right: 2rem;
+					}
+				}
+			}
+		}
+	}
+	.message-box-link-box {
+		width: 40rem; // height: 27.5rem;
+		height: 0;
+		overflow: hidden;
+		background: $nav-color;
+		position: absolute;
+		top: 6rem;
+		right: 19rem;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		font-size: 1.4rem;
+		z-index: 9999;
+		box-shadow: $box-shadows-2;
+		overflow: auto;
+		transition: all .4s;
+		.message-box-header {
+			width: 100%;
+			height: 4rem;
+			border-bottom: 1px solid rgba(#fff, .2);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.message-header {
+				font-size: 1.5rem;
+				text-transform: uppercase;
+				font-family: $OpenSans;
+			}
+		}
+		.message-content-box {
+			width: 100%;
+			max-height: 20rem;
+			overflow-y: scroll;
+			.main-message-content {
+				width: 100%;
+				height: 10rem;
+				display: flex;
+				flex-direction: row;
+				border-bottom: 1px solid rgba(#fff, .2);
+				&:hover {
+					opacity: .5;
+				}
+				.user-message-profile-logo-box {
+					width: 7rem;
+					height: 100%;
+					padding: 1rem;
+					.user-message-profile-logo-box-round {
+						width: 5rem;
+						height: 5rem;
+						border: 2px solid $white;
+						border-radius: 50%;
+						overflow: hidden;
+						background: $white;
+						.user-message-profile-logo-box-round-img {
+							width: 100%;
+							height: 100%;
+						}
+					}
+				}
+				.user-profile-message-content-box {
+					width: calc(100% - 7rem);
+					height: 100%;
+					padding: 1rem;
+					overflow: hidden;
+					.user-profile-message-content-header {
+						font-size: 1.5rem;
+						color: $light-blue;
+						padding-bottom: .5rem;
+					}
+					.user-profile-message-content-message {
+						font-size: 1.2rem;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+		.message-box-footer {
+			width: 100%;
+			height: 4rem;
+			border-top: 1px solid rgba(#fff, .2);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background: $nav-color;
+			.message-footer {
+				font-size: 1.2rem;
+				text-transform: uppercase;
+				font-family: $OpenSans;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	#topNavbar {
+		.message-box-link-box {
+			top: 6rem;
+			right: 0rem;
+		}
+	}
+}
+
